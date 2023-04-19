@@ -9,8 +9,15 @@ module.exports = {
           100: "#E2E2D5",
           200: "#888883",
         }
-      }
-    },
+      },
+      fontFamily: {
+        body: ["Nunito"]
+      },
+      screens: {
+        'sm': '576px',
+        // => @media (min-width: 992px) { ... }
+      },
+    }
   },
   plugins: [],
 }
