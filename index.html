@@ -7,30 +7,36 @@
     <title>Meals from Nigeria</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-gray-600">
+<body class="text-gray-600 font-body">
 
-    <div> <!-- content-wrapper  -->
-        <div>
-            <nav >
-                <div>
-                    <h1 class="font-bold uppercase p-4 border border-gray-100 text-primary">
-                        <a href="/">Nigerian Recipes</a>
+    <div class="grid md:grid-cols-6"> <!-- content-wrapper  -->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700">Nigerian Recipes</a>
                     </h1>
+                    <div class="px-4 py-3 cursor-pointer md:hidden" id="hamburger">
+                        <svg class="w-8 fill-secondary-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                    </div>
                 </div>
-                <ul>
-                    <li class="text-gray-700 font-bold">
-                        <a href="#">
+                <ul class="hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1 border-r-4 border-primary">
+                        <a href="#" class="flex px-4 justify-end gap-2">
                             <span>Home</span>
+                            <svg class="w-5 fill-gray-700 font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                    </li> 
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
                             <span>About Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>information</title><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
                             <span>contact Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-box</title><path d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" /></svg>
                         </a>
                     </li>
                 </ul>
@@ -38,10 +44,10 @@
         </div>
 
 
-        <main class="px-16 py-6">
-            <div>
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
+        <main class="px-16 py-6 bg-gray-100 md:col-span-5">
+            <div class="flex md:justify-end justify-center gap-3 text-primary">
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white transition ease-in-out 1s">Log in</a>
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white">Sign up</a>
             </div>            
 
             <header>
@@ -52,45 +58,58 @@
             <div>
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 
-                <div class="mt-8">
+                <div class="mt-8 grid lg:grid-cols-3 sm:grid-cols-2 gap-10">
                     <!-- cards go here -->
-                    <div>
+                    <div class="card">
                         <a href="recipes/jollof.html">
-                           <!-- <img src="images/jollofrice.jpg" alt=""> -->
-                           <div>
-                                <span>Jollof Rice</span>
-                                <span>Recipe by Aceygram</span>
-                           </div> 
+                           <img src="images/jollofrice.jpg" alt="jollof rice" class="w-full h-32 sm:h-48 object-cover">
+                           <div class="m-4">
+                                <span class="font-bold">Jollof Rice, Salad and Fried Chicken</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                           </div>
+                           <div class="badge">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                <span>50 mins</span>
+                            </div> 
                         </a>
                     </div>
-                    <div>
+                    <div class="card">
                         <a href="recipes/oha-soup.html">
-                           <!-- <img src="images/ohasoup.jpg" alt=""> -->
-                           <div>
-                                <span>Oha Soup</span>
-                                <span>Recipe by Aceygram</span>
-                           </div> 
+                           <img src="images/ohasoup.jpg" alt="oha soup" class="w-full h-32 sm:h-48 object-cover">
+                           <div class="m-4">
+                                <span class="font-bold">Oha Soup</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                           </div>
+                           <div class="badge">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                <span>40 mins</span>
+                            </div> 
                         </a>
                     </div>
-                    <div>
+                    <div class="card">
                         <a href="recipes/tea-and-bread-with-akara.html">
-                           <!-- <img src="images/teaandbreadwithakara.jpg" alt=""> -->
-                           <div>
-                                <span>Tea and Bread with Akara</span>
-                                <span>Recipe by Aceygram</span>
-                           </div> 
+                           <img src="images/teaandbreadwithakara.jpg" alt="Tea and Bread with Akara" class="w-full h-32 sm:h-48 object-cover">
+                           <div class="m-4">
+                                <span class="font-bold">Tea and Bread with Akara</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                           </div>
+                           <div class="badge">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                <span>10 mins</span>
+                            </div> 
                         </a>
                     </div>
 
+                </div>
+                <div>
                     <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
 
                     <div class="mt-8">
                         <!-- cards go here -->
                     </div>
-                   
-                    <div>
-                        <div class="text-secondary-100 bg-secondary-200">Load More</div>
-                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="text-secondary-100 bg-secondary-200 btn hover:shadow-inner">Load More</div>
                 </div>
                 
             </div>
