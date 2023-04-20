@@ -9,7 +9,11 @@
 }
 
 .badge { 
-    @apply bg-secondary-100 text-secondary-200 rounded-full py-1 px-2 absolute top-0 m-3 text-xs font-bold flex items-center gap-1;
+    @apply bg-secondary-100 text-secondary-200 rounded-full py-1 px-2 absolute top-0 m-3 text-xs font-bold flex items-center gap-1 uppercase;
+}
+
+.badge-recipe {
+    @apply bg-secondary-100 text-secondary-200 rounded-full py-1 px-2 absolute top-0 m-3 text-lg font-bold flex items-center gap-1 uppercase;
 }
 
 .btn {
@@ -18,4 +22,12 @@
 
 .svg {
     @apply w-5 fill-secondary-200;
+}
+
+.svg-recipe {
+    @apply w-6 fill-secondary-200;
+}
+
+.svg-step {
+    @apply w-10 fill-secondary-200 inline-block;
 }
