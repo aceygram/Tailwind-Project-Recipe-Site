@@ -5,65 +5,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jollof Rice</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
+</head>
+<body class="text-gray-600 font-body">
+
+    <div class="grid md:grid-cols-6"> <!-- content-wrapper  -->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700">Nigerian Recipes</a>
+                    </h1>
+                    <div class="px-4 py-3 cursor-pointer md:hidden" id="hamburger">
+                        <svg class="w-8 fill-secondary-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                    </div>
+                </div>
+                <ul class="hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1 border-r-4 border-primary">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>Home</span>
+                            <svg class="w-5 fill-gray-700 font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+                        </a>
+                    </li> 
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>About Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>information</title><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
+                        </a>
+                    </li>
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>contact Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-box</title><path d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" /></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <main class="px-8 md:px-16 py-6 bg-gray-100 md:col-span-5">
+            <div class="flex md:justify-end justify-center gap-3 text-primary mb-5">
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white transition ease-in-out duration-1000">Log in</a>
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white transition ease-in-out duration-1000">Sign up</a>
+            </div>            
+
+            <header>
+                <h2 class="text-gray-700 text-3xl md:text-6xl font-semibold">Recipe</h2>
+                <h3 class="text-2xl font-semibold mt-4">For Jollof Rice, Salad and Fried Chicken</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b-2 border-primary">A sumptuous rice dish from West Africa, eaten with coleslaw and fried chicken</h4>
+
+                <div class="mt-8">
+                    <!-- cards go here -->
+                    <div class="card">
+                           <img src="../images/jollofrice.jpg" alt="jollof rice" class="w-full h-32 sm:h-96 object-cover">
+                           <div class="m-5 border-primary border-b-2 pb-2">
+                                <span class="font-bold">Jollof Rice, Salad and Fried Chicken</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                           </div>
+                           <div class="badge-recipe">
+                                <svg class="svg-recipe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                <span>50 mins</span>
+                            </div> 
+                            <div class="m-5">                        
+                                <p class="text-lg font-bold mb-2">This dish is typically made with long-grain rice, tomatoes, onions, spices, vegetables and meat in a single pot, although its ingredients and preparation methods vary across different regions.</p>
+                                <p>Jollof rice traditionally consists of rice, cooking oil, vegetables such as tomato, onion, red pepper, garlic, ginger and Scotch bonnet chilli peppers. To enhance the colour of the dish, tomato paste (purée) is added. As seasoning, spices, salt, stock cubes (a blend of flavour enhancers, salt, nutmeg and herbs), curry powder and dried thyme are used. To complement the dish, chicken, turkey, beef or fish are often served with the dish.</p>
+                            </div>
+                            <div class="my-3">
+                                <h3 class="font-bold text-xl mx-5 my-2 pb-2 border-b-2 border-primary">Ingredients</h3>
+                                <ul>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">5</span> <p class="col-span-11">medium sized Roma tomatoes, roughly chopped</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11">red bell pepper, roughly chopped</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11">medium sized onion, roughly chopped, set aside</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">2</span> <p class="col-span-11">scotch bonnet peppers (habanero peppers as they are sometimes called)</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1/4</span> <p class="col-span-11">cup of groundnut oil</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">3</span> <p class="col-span-11">tbsp tomato paste</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">2</span> <p class="col-span-11">cups of parboiled rice</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">2 1/2</span> <p class="col-span-11">cups of chicken stock</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11">tsp salt to taste</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1/2</span> <p class="col-span-11">tsp curry powder</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1/2</span> <p class="col-span-11">tsp thyme</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11">tsp All purpose seasoning</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11">Knorr stock cube</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">3</span> <p class="col-span-11">bay leaves</p></li>
+                                    <li class="grid grid-cols-12"><p class="col-start-2 col-span-11">Water, as needed</p></li>
+                                </ul>
+                            </div>
+                            <div class="m-5">    
+                                <h3>Steps</h3>
+                                <ul>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-3">
+                                        Blend your tomatoes, red pepper, scotch bonnet peppers in a food processor or blender for about 45 seconds, make sure that everything is blended well.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11">
+                                            In a medium sized pot, heat your oil on medium-high heat. Once the oil is heated add the onions you set aside and fry just until they turn golden brown. Once the onions, have turned brown in color add the tomato paste and fry for 2-3 minutes.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11">
+                                            Then add the blended tomato mixture (reserve about 1/4 cup and set aside) and fry the mixture with the onions and tomato paste for about 30 minutes. Make sure you stir consistently so that the tomato mixture does not burn.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11">
+                                            After 30 minutes, turn the heat down to medium, and add the chicken stock. Mix and add your seasonings (salt, curry powder, thyme, all purpose seasoning, and the Knorr stock cube). Continue to boil for 10 minutes.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                         <p class="col-span-11">
+                                            Add the parboiled rice to the pot. Mix it very well with the tomato stew. At this point if you need to add water so that the rice is level with the tomato mixture/chicken stock go ahead and do so. Add the bay leaves, cover the pot, and cook on medium to low heat for 15-30 minutes.
+                                         </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11">
+                                            When the liquid has almost dried up add the remaining tomato stew, cover, and let it cook for another 5-10 minutes heat until the liquid has completely dried up. Turn off the heat, mix thoroughly, and your Jollof Rice is ready to be eaten!
+                                        </p></li>
+                                </ul>
+                                
+                                <ol>
+                                    <li>
+                                        <span>
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p></p> 
+                                        <!--I purposely put the <p> to surround both text because as a block level element, i needed to separate the two paragraphs so it would be readable to the eyes-->
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        
+                                    </li>
+                                    <br>
+                                    <li>
+                                    </li>
+                                    <br>
+                                    <li>
+                                    </li>
+                                </ol>
+                            </div>
+                    </div>
+
+                </div>
+                <div>
+                    <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+
+                    <div class="mt-8">
+                        <!-- cards go here -->
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="text-secondary-100 bg-secondary-200 btn hover:shadow-inner transition ease-in-out duration-1000 transform hover:scale-125 hover:bg-opacity-50">Load More</div>
+                </div>
+                
+            </div>
+           
+            <div>
+                <a href="#top">Go back to the top</a>
+            </div>
+        </main>
+    </div>
+
+
     <h1>Jollof Rice Recipe</h1>
 
     <img src="../images/jollofrice.jpg" alt="A Beautiful Plate of Jollof Rice">
     
     <!-- using the old style of html specifying the width and height because the photo i downloaded was around 4928x3264 pixels. Although i know the height/width specification is supposed to be done by css, i used only html, since this is just an html project -->
 
-    <div>
-        <h2>A sumptuous rice dish from West Africa, eaten with coleslaw and fried chicken</h2>
-
-        <p>This dish is typically made with long-grain rice, tomatoes, onions, spices, vegetables and meat in a single pot, although its ingredients and preparation methods vary across different regions.</p>
-
-        <p>Jollof rice traditionally consists of rice, cooking oil, vegetables such as tomato, onion, red pepper, garlic, ginger and Scotch bonnet chilli peppers. To enhance the colour of the dish, tomato paste (purée) is added. As seasoning, spices, salt, stock cubes (a blend of flavour enhancers, salt, nutmeg and herbs), curry powder and dried thyme are used. To complement the dish, chicken, turkey, beef or fish are often served with the dish.</p>
-    </div>
-    <div>
-        <h3>Ingredients</h3>
-        <ul>
-            <li>5 medium sized Roma tomatoes, roughly chopped</li>
-            <li>1 red bell pepper, roughly chopped</li>
-            <li>1 medium sized onion, roughly chopped, set aside</li>
-            <li>2 scotch bonnet peppers (habanero peppers as they are sometimes called)</li>
-            <li>1/4 cup of groundnut oil</li>
-            <li>3 tbsp tomato paste</li>
-            <li>2 cups of parboiled rice</li>
-            <li>2 1/2 cups of chicken stock</li>
-            <li>1 tsp salt to taste</li>
-            <li>1/2 tsp curry powder</li>
-            <li>1/2 tsp thyme</li>
-            <li>1 tsp All purpose seasoning</li>
-            <li>1 Knorr stock cube</li>
-            <li>3 bay leaves</li>
-            <li>Water, as needed</li>
-        </ul>
-    </div>
-    <div>    
-        <h3>Steps</h3>
-        <ol>
-            <li>
-                Blend your tomatoes, red pepper, scotch bonnet peppers in a food processor or blender for about 45 seconds, make sure that everything is blended well.
-            </li>
-            <li>
-                <p>In a medium sized pot, heat your oil on medium-high heat. Once the oil is heated add the onions you set aside and fry just until they turn golden brown. Once the onions, have turned brown in color add the tomato paste and fry for 2-3 minutes.</p> 
-                <!--I purposely put the <p> to surround both text because as a block level element, i needed to separate the two paragraphs so it would be readable to the eyes-->
-                <p>Then add the blended tomato mixture (reserve about 1/4 cup and set aside) and fry the mixture with the onions and tomato paste for about 30 minutes. Make sure you stir consistently so that the tomato mixture does not burn.</p>
-            </li>
-            <li>
-                After 30 minutes, turn the heat down to medium, and add the chicken stock. Mix and add your seasonings (salt, curry powder, thyme, all purpose seasoning, and the Knorr stock cube). Continue to boil for 10 minutes.
-            </li>
-            <br>
-            <li>
-                Add the parboiled rice to the pot. Mix it very well with the tomato stew. At this point if you need to add water so that the rice is level with the tomato mixture/chicken stock go ahead and do so. Add the bay leaves, cover the pot, and cook on medium to low heat for 15-30 minutes.
-            </li>
-            <br>
-            <li>
-                When the liquid has almost dried up add the remaining tomato stew, cover, and let it cook for another 5-10 minutes heat until the liquid has completely dried up. Turn off the heat, mix thoroughly, and your Jollof Rice is ready to be eaten!
-            </li>
-        </ol>
-    </div>
+    
+    
+    
     <hr>
     <div>
         <a href="#top">Go back to the top</a>
