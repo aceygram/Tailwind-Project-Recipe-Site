@@ -5,66 +5,236 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oha Soup</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <h1>Oha Soup</h1>
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-6" id="top"> <!-- content-wrapper  -->
+        <div class="md:col-span-1 md:flex md:justify-between md:items-end md:flex-col">
+            <nav class="text-right">
+                <div class="flex justify-between">
+                    <h1 class="font-bold uppercase p-4 md:border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700">Nigerian Recipes</a>
+                    </h1>
+                    <div class="px-4 py-3 cursor-pointer md:hidden" id="hamburger">
+                        <svg class="w-8 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                    </div>
+                </div>
+                <ul class="hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1 border-r-4 border-primary">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>Home</span>
+                            <svg class="w-5 fill-gray-700 font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+                        </a>
+                    </li> 
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>About Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>information</title><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
+                        </a>
+                    </li>
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>contact Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-box</title><path d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" /></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="md:flex self-center gap-5 pb-10 hidden">
+                <a href="#top"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-up-bold-circle-outline</title><path d="M12,7L17,12H14V16H10V12H7L12,7M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20Z" /></svg></a>
+                <a href="../index.html"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-circle-outline</title><path d="M12 20C7.6 20 4 16.4 4 12S7.6 4 12 4 20 7.6 20 12 16.4 20 12 20M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M11 14H13V17H16V12H18L12 7L6 12H8V17H11V14" /></svg></a>
+            </div>
+        </div>
 
-    <img src="../images/ohasoup.jpg" alt="A Spicy bowl of Oha Soup">
 
-    <div>
-        <h2>A spicy delicacy from Nigeria, eaten with Eba, Fufu, or Pounded Yam</h2>
+        <main class="px-8 md:px-16 py-6 bg-gray-100 md:col-span-5">
+            <div class="flex md:justify-end justify-center gap-3 text-primary mb-5">
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white transition ease-in-out duration-1000">Log in</a>
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white transition ease-in-out duration-1000">Sign up</a>
+            </div>            
 
-        <p>Also known as Ofe Oha, this soup mostly eaten in the south eastern part of Nigeria by the igbo tribe as lunch or simply a diner. it is accomapied by another type of meal called "swallow" which comprises of Eba, fufu, wheat, or pounded yam</p>
+            <header>
+                <h2 class="text-gray-700 text-3xl md:text-6xl font-semibold">Recipe</h2>
+                <h3 class="text-2xl font-semibold mt-4">For Oha Soup</h3>
+            </header>
 
-        <p>This recipe comes from the eastern part of Nigeria. It is one of those native Igbo soups that you taste and just can’t forget. If you ever visit me and I make Oha soup for you, best believe you are very important to me. Oha leaves are gotten from the evergreen tree in Africa. The plant is botanically known as Pterocarpus mildraedii. It contains many nutrients such as fibre, amino acids, calcium, iron, potassium and vitamin A</p>
-    </div>
-    <div>
-        <h3>Ingredients</h3>
-        <ul>
-            <li>Beef/Chicken/lamb/turkey or your preferred protein</li>
-            <li>Stock fish</li>
-            <li>Smoked fish</li>
-            <li>Periwinkle (Optional)</li>
-            <li>Ground crayfish</li>
-            <li>Ponmo</li>
-            <li>Palm oil</li>
-            <li>Onions</li>
-            <li>Cocoyam or Achi ( Soup Thickeners)</li>
-            <li>Oha leaves (cut using a knife or shredding with your fingers)</li>
-            <li>Uziza leaves (chopped)</li>
-            <li>Seasonings</li>
-            <li>Salt</li>
-            <li>Water/Meat stock</li>
-        </ul>
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b-2 border-primary">A spicy delicacy from Nigeria, eaten with Eba, Fufu, or Pounded Yam</h4>
+
+                <div class="mt-8">
+                    <!-- cards go here -->
+                    <div class="card">
+                           <img src="../images/ohasoup.jpg" alt="Oha soup" class="w-full h-32 sm:h-96 object-cover">
+                           <div class="m-5 border-primary border-b-2 pb-2">
+                                <span class="font-bold">Oha Soup</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                           </div>
+                           <div class="md:badge-recipe badge">
+                                <svg class="md:svg-recipe svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                <span>40 mins</span>
+                            </div> 
+                            <div class="m-5">                        
+                                <p class="text-lg font-bold mb-2">Also known as Ofe Oha, this soup mostly eaten in the south eastern part of Nigeria by the igbo tribe as lunch or simply a diner. it is accomapied by another type of meal called "swallow" which comprises of Eba, fufu, wheat, or pounded yam</p>
+                                <p>This recipe comes from the eastern part of Nigeria. It is one of those native Igbo soups that you taste and just can’t forget. If you ever visit me and I make Oha soup for you, best believe you are very important to me. Oha leaves are gotten from the evergreen tree in Africa. The plant is botanically known as Pterocarpus mildraedii. It contains many nutrients such as fibre, amino acids, calcium, iron, potassium and vitamin A.</p>
+                            </div>
+
+                            <div class="my-3 ml-3">
+                                <h3 class="font-bold text-xl md:mx-5 mr-3 md:mr-5 my-2 pb-2 border-b-2 border-primary">Ingredients</h3>
+                                <ul>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Kg Beef/Chicken/Lamb/Turkey or your preferred protein</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Part of Stock fish</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Smoked fish</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Cup of periwinkle (Optional)</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">2</span> <p class="col-span-11 pl-2 md:pl-0">Tbsp of ground crayfish</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">3</span> <p class="col-span-11 pl-2 md:pl-0">Ground crayfish</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Cup of ponmo</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0"> Serving spoon of palm oil</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Tbsp salt to taste</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Medium onion</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">5</span> <p class="col-span-11 pl-2 md:pl-0">Cocoyam or Achi (Soup Thickeners)</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11  pl-2 md:pl-0">Bunch of oha leaves (cut using a knife or shredding with your fingers)</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11  pl-2 md:pl-0">Bunch of uziza leaves (chopped)</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">3</span> <p class="col-span-11  pl-2 md:pl-0">Cubes of Seasonings</p></li>
+                                    <li class="grid grid-cols-12"><p class="col-start-2 col-span-11 pl-2 md:pl-0">Water/Meat stock as needed</p></li>
+                                </ul>
+                            </div>
+                            <div class="my-5 md:ml-3 pb-3">    
+                                <h3 class="font-bold text-xl mx-3 md:mx-5 my-2 pb-2 border-b-2 border-primary">Steps</h3>
+                                <ul class="mr-5">
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Put meat, kponmo and stock fish in a pot, add seasoning and onions, let simmer for 5 minutes, then put a little water, cover and let cook till meat is tender.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            You can either add cocoyam while cooking the meat so it can cook together to save time or cook the cocoyam separately.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            When it has cooked properly, add 2 cups of water then add palm oil, allow to cook for about ten minutes. (Remove cocoyam and pound in a mortar or blend using a blender or a food processor)
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Add ground crayfish, ground pepper, salt and let cook for another seven minutes.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                         <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Add the blended/ pounded cocoyam paste or achi (before you add achi to your soup, make sure you dissolve it in a little water, if not your soup will cake up). Let the soup cook for about three minutes
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Add your Oziza first (Oziza leaves are stronger than Oha leaves), then add your Oha leaves.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Let it cook for one minute, then turn off the cooker.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Your delicious Oha soup is ready.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Serve with your preferred swallow (Eba, Pounded yam, Fufu, wheat, etc).
+                                        </p></li>        
+                                </ul>
+                        
+                            </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h4 class="font-bold mt-12 pb-2 border-b-2 border-primary">Other Recipes</h4>
+
+                    <div class="my-8">
+                        <!-- cards go here -->
+                        <div class="mt-8 grid lg:grid-cols-3 sm:grid-cols-2 gap-10">
+                            <!-- cards go here -->
+                            <div class="card">
+                                <a href="jollof.html">
+                                   <img src="../images/jollofrice.jpg" alt="jollof rice" class="w-full h-32 sm:h-48 object-cover">
+                                   <div class="m-4">
+                                        <span class="font-bold">Jollof Rice, Salad and Fried Chicken</span>
+                                        <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                                   </div>
+                                   <div class="badge">
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                        <span>50 mins</span>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="oha-soup.html">
+                                   <img src="../images/ohasoup.jpg" alt="oha soup" class="w-full h-32 sm:h-48 object-cover">
+                                   <div class="m-4">
+                                        <span class="font-bold">Oha Soup</span>
+                                        <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                                   </div>
+                                   <div class="badge">
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                        <span>40 mins</span>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="tea-and-bread-with-akara.html">
+                                   <img src="../images/teaandbreadwithakara.jpg" alt="Tea and Bread with Akara" class="w-full h-32 sm:h-48 object-cover">
+                                   <div class="m-4">
+                                        <span class="font-bold">Tea and Bread with Akara</span>
+                                        <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                                   </div>
+                                   <div class="badge">
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                        <span>30 mins</span>
+                                    </div> 
+                                </a>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center pb-4">
+                    <div class="text-secondary-100 bg-secondary-200 btn hover:shadow-inner transition ease-in-out duration-1000 transform hover:scale-125 hover:bg-opacity-50">Load More</div>
+                </div>
+                
+            </div>
+
+            <div class="md:hidden justify-center gap-5 border-t-2 border-primary p-2 flex">
+                <a href="#top"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-up-bold-circle-outline</title><path d="M12,7L17,12H14V16H10V12H7L12,7M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20Z" /></svg></a>
+                <a href="../index.html"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-circle-outline</title><path d="M12 20C7.6 20 4 16.4 4 12S7.6 4 12 4 20 7.6 20 12 16.4 20 12 20M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M11 14H13V17H16V12H18L12 7L6 12H8V17H11V14" /></svg></a>
+            </div>
+           
+
+        </main>
     </div>    
-    <div>
-        <h3>Steps</h3>
-        <ol>
-            <li>Put meat, kponmo and stock fish in a pot, add seasoning and onions, let simmer for 5 minutes, then put a little water, cover and let cook till meat is tender.</li>
-            <br>
-            <li>You can either add cocoyam while cooking the meat so it can cook together to save time or cook the cocoyam separately.</li>
-            <br>
-            <li>When it has cooked properly, add 2 cups of water then add palm oil, allow to cook for about ten minutes. (Remove cocoyam and pound in a mortar or blend using a blender or a food processor)</li>
-            <br>
-            <li>Add ground crayfish, ground pepper, salt and let cook for another seven minutes.</li>
-            <br>
-            <li>Add the blended/ pounded cocoyam paste or achi (before you add achi to your soup, make sure you dissolve it in a little water, if not your soup will cake up). Let the soup cook for about three minutes</li>
-            <br>
-            <li>Add your Oziza first (Oziza leaves are stronger than Oha leaves), then add your Oha leaves.</li>
-            <br>
-            <li>Let it cook for one minute, then turn off the cooker</li>
-            <br>
-            <li>Your delicious Oha soup is ready.</li>
-            <br>
-            <li>Serve with your preferred swallow (Eba, Pounded yam, Fufu, wheat, etc)</li>
-        </ol>
-    </div>
-    <hr>
-    <div>
-        <a href="#top">Return to the top</a>
-    </div>
-    <div>
-        <a href="../index.html">Return to main page</a>
-    </div>
+    
+<script src="../main.js"></script>
 </body>
 </html>
