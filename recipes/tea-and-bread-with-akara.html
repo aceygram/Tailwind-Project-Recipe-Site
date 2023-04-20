@@ -5,57 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea and Bread with Akara</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <h1>Tea and Bread with Akara</h1>
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-6" id="top"> <!-- content-wrapper  -->
+        <div class="md:col-span-1 md:flex md:justify-between md:items-end md:flex-col">
+            <nav class="text-right">
+                <div class="flex justify-between">
+                    <h1 class="font-bold uppercase p-4 md:border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700">Nigerian Recipes</a>
+                    </h1>
+                    <div class="px-4 py-3 cursor-pointer md:hidden" id="hamburger">
+                        <svg class="w-8 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                    </div>
+                </div>
+                <ul class="hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1 border-r-4 border-primary">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>Home</span>
+                            <svg class="w-5 fill-gray-700 font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+                        </a>
+                    </li> 
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>About Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>information</title><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
+                        </a>
+                    </li>
+                    <li class="py-1 border-r-4">
+                        <a href="#" class="flex px-4 justify-end gap-2">
+                            <span>contact Us</span>
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-box</title><path d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" /></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="md:flex self-center gap-5 pb-10 hidden">
+                <a href="#top"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-up-bold-circle-outline</title><path d="M12,7L17,12H14V16H10V12H7L12,7M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20Z" /></svg></a>
+                <a href="../index.html"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-circle-outline</title><path d="M12 20C7.6 20 4 16.4 4 12S7.6 4 12 4 20 7.6 20 12 16.4 20 12 20M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M11 14H13V17H16V12H18L12 7L6 12H8V17H11V14" /></svg></a>
+            </div>
+        </div>
 
-    <img src="../images/teaandbreadwithakara.jpg" alt="A hot cup chocolate tea with bread and akara" width="500px" height="500px">
 
-      <!-- using the old style of html specifying the width and height because the photo i downloaded was around 1080x1015 pixels. Although i know the height/width specification is supposed to be done by css, i used only html, since this is just an html project -->
+        <main class="px-8 md:px-16 py-6 bg-gray-100 md:col-span-5">
+            <div class="flex md:justify-end justify-center gap-3 text-primary mb-5">
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white transition ease-in-out duration-1000">Log in</a>
+                <a href="#" class="btn md:border-2 border-primary md:hover:bg-primary md:hover:text-white transition ease-in-out duration-1000">Sign up</a>
+            </div>            
 
-    <div>
-        <h2>A perfect cup of milk chocolate with bread and akara for your Saturday mornings</h2>
+            <header>
+                <h2 class="text-gray-700 text-3xl md:text-6xl font-semibold">Recipe</h2>
+                <h3 class="text-2xl font-semibold mt-4">For Tea and Bread with Akara</h3>
+            </header>
 
-        <p>Akara, bread and tea is one of the most well liked of recent trending foods in the world. It is easy, it is quick, it tastes delicious. It’s appreciated by millions daily. Akara, bread and tea is something which a lot of people have loved their whole life. They are fine and they look wonderful</p>
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b-2 border-primary">A perfect cup of milk chocolate with bread and akara for your Saturday mornings</h4>
 
-        <p>Akara and bread can be eaten in the morning for breakfast or evening as dinner, in Nigerian this super combo of food are street food usually seen by the roadside, except your taste bud is abnormal and your nostrils are completely blocked, the aroma coming from the hot Akara (bean cake) when those women are frying it is just too sweet. The sweet aroma coming from freshly baked bread will make you eat bread even when not planned for, the best way to enjoy bread and Akara is to stuff Akara in between two slices of bread or divide your Agege bread and place the Akara in the middle, Ahh! This is original Nigerian Akara burger</p>
-    </div>
-    <div>    
-        <h3>Ingredients</h3>
-        <ul>
-            <li>Beans</li>
-            <li>Vegetable oil</li>
-            <li>Salt</li>
-            <li>Onion</li>
-            <li>Fresh red pepper</li>
-            <li>Agege bread</li>
-            <li>Milo</li>
-            <li>Milk</li>
-        </ul>
-    </div>
-    <div>
-        <h3>Steps</h3>
-        <ol>
-            <li>Wash the beans and wash off the back.rinse very well.</li>
-            <br>
-            <li>Cut onion,Fresh pepper inside and blend preferrable in the mill</li>
-            <br>
-            <li>Mix with little amount of water add salt to taste.</li>
-            <br>
-            <li>Heat up vegetable oil and use a small cooking spoon to scoop the mixture to the hot vegetable oil.</li>
-            <br>
-            <li>Fry till is golden brown repeat till the mixture finish.</li>
-            <br>
-            <li>Mix the mill and mil in a cup and pour in hot water stir.
-            </li>
-        </ol>
-    </div>
-    <hr>
-    <div>
-        <a href="#top">Return to the top</a>
-    </div>
-    <div>
-        <a href="../index.html">Return to main page</a>
-    </div>
+                <div class="mt-8">
+                    <!-- cards go here -->
+                    <div class="card">
+                           <img src="../images/teaandbreadwithakara.jpg" alt="Oha soup" class="w-full h-32 sm:h-96 object-cover">
+                           <div class="m-5 border-primary border-b-2 pb-2">
+                                <span class="font-bold">Tea and Bread with Akara</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                           </div>
+                           <div class="md:badge-recipe badge">
+                                <svg class="md:svg-recipe svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                <span>30 mins</span>
+                            </div> 
+
+                            <div class="m-5">                        
+                                <p class="text-lg font-bold mb-2">Akara, bread and tea is one of the most well liked of recent trending foods in the world. It is easy, it is quick, it tastes delicious. It’s appreciated by millions daily. Akara, bread and tea is something which a lot of people have loved their whole life. They are fine and they look wonderful</p>
+                                <p>Akara and bread can be eaten in the morning for breakfast or evening as dinner, in Nigerian this super combo of food are street food usually seen by the roadside, except your taste bud is abnormal and your nostrils are completely blocked, the aroma coming from the hot Akara (bean cake) when those women are frying it is just too sweet. The sweet aroma coming from freshly baked bread will make you eat bread even when not planned for, the best way to enjoy bread and Akara is to stuff Akara in between two slices of bread or divide your Agege bread and place the Akara in the middle, Ahh! This is original Nigerian Akara burger</p>
+                            </div>
+
+                                        <!-- copied code -->
+            
+            
+           <!-- end -->
+                            <div class="my-3 ml-3">
+                                <h3 class="font-bold text-xl md:mx-5 mr-3 md:mr-5 my-2 pb-2 border-b-2 border-primary">Ingredients</h3>
+                                <ul>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">3</span> <p class="col-span-11 pl-2 md:pl-0">Cups of beans</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Cup of vegetable oil</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">3</span> <p class="col-span-11 pl-2 md:pl-0"> Seeds of fresh red pepper</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1/2</span> <p class="col-span-11 pl-2 md:pl-0">Tbsp salt to taste</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Medium onion</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11 pl-2 md:pl-0">Agege bread</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">3</span> <p class="col-span-11  pl-2 md:pl-0">Tbsp ofMilo</p></li>
+                                    <li class="grid grid-cols-12"><span class="font-bold text-center">1</span> <p class="col-span-11  pl-2 md:pl-0">Tin of milk</p></li>
+                                    <li class="grid grid-cols-12"><p class="col-start-2 col-span-11 pl-2 md:pl-0">Water as needed</p></li>
+                                </ul>
+                            </div>
+
+                            <div class="my-5 md:ml-3 pb-3">    
+                                <h3 class="font-bold text-xl mx-3 md:mx-5 my-2 pb-2 border-b-2 border-primary">Steps</h3>
+                                <ul class="mr-5">
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Wash the beans and wash off the back.rinse very well.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Cut onion,Fresh pepper inside and blend preferrable in the mill
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Mix with little amount of water add salt to taste.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Heat up vegetable oil and use a small cooking spoon to scoop the mixture to the hot vegetable oil.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                         <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Fry till is golden brown repeat till the mixture finish.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Mix the milk and milo in a cup and pour in hot water stir.
+                                        </p></li>
+                                    <li class="grid grid-cols-12">
+                                        <span class="font-bold text-center">
+                                            <svg class="svg-step" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>circle-small</title><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
+                                        </span>
+                                        <p class="col-span-11 mt-2 ml-3 md:ml-0">
+                                            Your delicious Tea and Bread with Akara is ready.
+                                        </p></li>        
+                                </ul>
+                        
+                            </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h4 class="font-bold mt-12 pb-2 border-b-2 border-primary">Other Recipes</h4>
+
+                    <div class="my-8">
+                        <!-- cards go here -->
+                        <div class="mt-8 grid lg:grid-cols-3 sm:grid-cols-2 gap-10">
+                            <!-- cards go here -->
+                            <div class="card">
+                                <a href="jollof.html">
+                                   <img src="../images/jollofrice.jpg" alt="jollof rice" class="w-full h-32 sm:h-48 object-cover">
+                                   <div class="m-4">
+                                        <span class="font-bold">Jollof Rice, Salad and Fried Chicken</span>
+                                        <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                                   </div>
+                                   <div class="badge">
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                        <span>50 mins</span>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="oha-soup.html">
+                                   <img src="../images/ohasoup.jpg" alt="oha soup" class="w-full h-32 sm:h-48 object-cover">
+                                   <div class="m-4">
+                                        <span class="font-bold">Oha Soup</span>
+                                        <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                                   </div>
+                                   <div class="badge">
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                        <span>40 mins</span>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="tea-and-bread-with-akara.html">
+                                   <img src="../images/teaandbreadwithakara.jpg" alt="Tea and Bread with Akara" class="w-full h-32 sm:h-48 object-cover">
+                                   <div class="m-4">
+                                        <span class="font-bold">Tea and Bread with Akara</span>
+                                        <span class="block text-gray-500 text-sm">Recipe by Aceygram</span>
+                                   </div>
+                                   <div class="badge">
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clock-outline</title><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" /></svg>
+                                        <span>30 mins</span>
+                                    </div> 
+                                </a>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center pb-4">
+                    <div class="text-secondary-100 bg-secondary-200 btn hover:shadow-inner transition ease-in-out duration-1000 transform hover:scale-125 hover:bg-opacity-50">Load More</div>
+                </div>
+                
+            </div>
+
+            <div class="md:hidden justify-center gap-5 border-t-2 border-primary p-2 flex">
+                <a href="#top"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-up-bold-circle-outline</title><path d="M12,7L17,12H14V16H10V12H7L12,7M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20Z" /></svg></a>
+                <a href="../index.html"><svg class="svg-menu transition ease-in-out duration-1000 transform hover:scale-125" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-circle-outline</title><path d="M12 20C7.6 20 4 16.4 4 12S7.6 4 12 4 20 7.6 20 12 16.4 20 12 20M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M11 14H13V17H16V12H18L12 7L6 12H8V17H11V14" /></svg></a>
+            </div>
+           
+
+        </main>
+    </div>    
+    
+<script src="../main.js"></script>
 </body>
 </html>
